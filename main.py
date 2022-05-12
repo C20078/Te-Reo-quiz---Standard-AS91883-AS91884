@@ -3,8 +3,14 @@
 
 def q1():
   print ("Question 1")
-  colour = input ("Whero is what color? Red / Green /  Orange / Blue")
-  if colour ==
+  colour = input ("Whero is what color? Red / Green /  Orange / Blue =")
+  if colour == "Red":
+    print ("correct")
+    q2()
+  else:
+    print ("wrong")
+    q2()
+
 
 def q2():
   print ("this is question 2, What is the traditional maori dance called? Pukana / Haka / Kabuki / Taki")
@@ -24,6 +30,6 @@ def q6():
 
 print ("hi this quiz")
 
-user = input ("what is name")
+user = input ("what is name ")
 print ("hi " + user)
 q1()
