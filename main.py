@@ -3,13 +3,13 @@
 
 def q1():
   print ("Question 1")
-  colour = input ("Whero is what color? Red / Green /  Orange / Blue = ")
-  if colour == "Red":
+  colour = input ("Whero is what color? Red / Green /  Orange / Blue = ".lower())
+  if colour == "red":
     print ("correct")
     q2()
   else:
     print ("wrong")
-    q2()
+    wrong()
 
 
 def q2():
@@ -20,7 +20,7 @@ def q2():
     q3()
   else:
     print ("wrong")
-    q3()
+    wrong()
   
 def q3():
   print ("This is question 3") 
@@ -30,7 +30,7 @@ def q3():
     q4()
   else:
     print ("wrong")
-    q4()
+    wrong()
   
 def q4():
   print ("This is question 4") 
@@ -40,23 +40,38 @@ def q4():
     q5()
   else:
     print ("wrong")
-    q5()
+    wrong()
   
 def q5():
   print ("This is question 5") 
   word = input ("Niu Tireni is the Māori word for New Zealand. False / True = ")
   if word == "false":
     print ("Correct")
-    q4()
+    correct()
   else:
     print ("wrong")
-    q4()
+    wrong()
+    
   
 def q6():
-  print ("This is question 6, What would be stored in a Paataka? Pukapuka / Kai / Waka")
+  print ("This is question 6")
+  store = input(" What would be stored in a Paataka? Pukapuka / Kai / Waka = ")
+  if input == "kai":
+    print ("correct")
+    correct()
+  else:
+    print ("wrong")
+    wrong()
+
+def wrong():
+  print ("u suck")
+
+def correct():
+  print ("good job")
 
 print ("hi this quiz")
 
 user = input ("what is name ")
 print ("hi " + user)
 q1()
+
