@@ -5,8 +5,13 @@
 
 #this part of code should send them to q2 or wrong depending on input v6
 def q1():
-  print ("Question 1")
-  colour = input ("Whero is what color? Red / Green /  Orange / Blue = ")
+  print ("\n"
+         "Question 1")
+  colour = input ("Whero is what color? \n"
+                  "Blue \n"
+                  "Green \n"
+                  "Red \n"
+                  "Yellow \n")
   colour = colour.lower()
   if colour == "red":
     print ("Correct")
@@ -17,8 +22,13 @@ def q1():
 
 #ask question 2, this part of code should send them to q3 or wrong depending on input v3
 def q2():
-  print ("Question 2") 
-  dance = input ("What is the traditional maori dance called? Pukana / Haka / Kabuki / Taki =")
+  print ("\n"
+         "Question 2") 
+  dance = input ("What is the traditional maori dance called? \n" 
+                 "Pukana \n" 
+                 "Haka \n"
+                 "Kabuki \n" 
+                 "Taki \n")
   dance = dance.lower()
   if dance == "haka":
     print ("Correct")
@@ -29,8 +39,10 @@ def q2():
 
 #ask question 3, this part of code should send them to q4 or wrong depending on input v3
 def q3():
-  print ("Question 3") 
-  song = input("Fill in the blank for the song - One day a ____ went swimming in the moana. Taniwha / Mokopuna / Tuna = \n")
+  print ("\n"
+         "Question 3") 
+  song = input("Fill in the blank for the song - One day a ____ went swimming in the moana. \n" "Taniwha \n" 
+               "\n Mokopuna" / Tuna = \n")
   song = song.lower()
   if song == "taniwha":
     print ("Correct")
@@ -87,7 +99,7 @@ def correct():
 print ("Te reo maori quiz - created by Charlotte ")
 print ("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 user = input ("Hello, What is your name? ") 
-print ("Ki ora, " + user + " this is a quiz created to test your maori language skills and New Zealand knowledge. There a 6 questions, Good luck! ")
+print ("Kia ora, " + user + " this is a quiz created to test your maori language skills and New Zealand knowledge. There a 6 questions, please type in the answers form the options listed. Good luck! ")
 #ask question 1
 q1()
 
