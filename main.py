@@ -87,10 +87,10 @@ def q4():
     print ("Correct")
     q5()
 
-  elif ocean == "A":
+  elif ocean == "B":
     print ("correct")
     q5()
-  elif ocean == "a":
+  elif ocean == "b":
     print ("correct")
     q5()
   else:
