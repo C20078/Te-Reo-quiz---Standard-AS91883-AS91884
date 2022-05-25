@@ -19,10 +19,10 @@ def q1():
     q2()
 
   elif colour == "C":
-    print ("correct")
+    print ("Correct")
     q2()
   elif colour == "c":
-    print ("correct")
+    print ("Correct")
     q2()
   else:
     print ("Wrong")
@@ -43,10 +43,10 @@ def q2():
     q3()
     
   elif dance == "B":
-    print ("correct")
+    print ("Correct")
     q3()
   elif dance == "b":
-    print ("correct")
+    print ("Correct")
     q3()
   else:
     print ("Wrong")
@@ -66,10 +66,10 @@ def q3():
     q4()
   
   elif song == "A":
-    print ("correct")
+    print ("Correct")
     q4()
   elif song == "a":
-    print ("correct")
+    print ("Correct")
     q4()
   else:
     print ("Wrong")
@@ -88,10 +88,10 @@ def q4():
     q5()
 
   elif ocean == "B":
-    print ("correct")
+    print ("Correct")
     q5()
   elif ocean == "b":
-    print ("correct")
+    print ("Correct")
     q5()
   else:
     print ("Wrong")
@@ -110,10 +110,10 @@ def q5():
     q6()
      
   elif word == "B":
-    print ("correct")
+    print ("Correct")
     q6()
   elif word == "b":
-    print ("correct")
+    print ("Correct")
     q6()
   else:
     print ("Wrong")
@@ -133,10 +133,10 @@ def q6():
     correct()
       
   elif store == "B":
-    print ("correct")
+    print ("Correct")
     correct()
   elif store == "b":
-    print ("correct")
+    print ("Correct")
     correct()
   else:
     print ("Wrong")
