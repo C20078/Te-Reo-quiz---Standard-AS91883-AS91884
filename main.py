@@ -161,8 +161,11 @@ print("\033[1;36m ")
 print ("Te reo maori quiz - created by Charlotte ")
 print ("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 user = input ("Hello, What is your name? ") 
-print ("Kia ora, " + user + " this is a quiz created to test your maori language skills and New Zealand knowledge. There a 6 questions, please type in the answers form the options listed. Good luck! ")
-
+print ("Kia ora, " + user + " this is a quiz created to test your maori language skills and New Zealand knowledge.")
+answer = input ("Do you want to take this quiz? [yes/no] \n").lower()
+if answer == "yes":
+  q1()
+  
+else:
+  print("Okay, maybe next time")
 #ask question 1
-q1()
-
