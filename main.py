@@ -28,14 +28,6 @@ def q1():
     q2()
   else:
     print ("Wrong")
-    try_again1()
-
-def try_again1():
-  respo = input ("Do you want to try again? \n")
-  respo = respo.lower()
-  if respo =="yes":
-    q1()
-  else:
     q2()
   
     
@@ -62,14 +54,6 @@ def q2():
     q3()
   else:
     print ("Wrong")
-    try_again2()
-
-def try_again2():
-  respo = input ("Do you want to try again? [yes/no] \n")
-  respo = respo.lower()
-  if respo =="yes":
-    q2()
-  else:
     q3()
 
 #ask question 3, this part of code should send them to q4 or wrong depending on input v3
@@ -96,7 +80,7 @@ def q3():
     try_again3()
 
 def try_again3():
-  respo = input ("Do you want to try again? [yes/no] \n")
+  respo = input ("This was a hard question would you want to try again? [yes/no] \n")
   respo = respo.lower()
   if respo =="yes":
     q3()
@@ -122,14 +106,6 @@ def q4():
     q5()
   else:
     print ("Wrong")
-    try_again4()
-
-def try_again4():
-  respo = input ("Do you want to try again? [yes/no] \n")
-  respo = respo.lower()
-  if respo =="yes":
-    q4()
-  else:
     q5()
 #ask question 5, this part of code should send them to q6 or wrong depending on input v3
 def q5():
@@ -151,14 +127,6 @@ def q5():
     q6()
   else:
     print ("Wrong")
-    try_again5()
-
-def try_again5():
-  respo = input ("Do you want to try again? [yes/no] \n")
-  respo = respo.lower()
-  if respo =="yes":
-    q5()
-  else:
     q6()
 #ask question 6, this part of code should send them to correct or wrong depending on input v4
 def q6():
@@ -184,7 +152,7 @@ def q6():
     try_again6()
 
 def try_again6():
-  respo = input ("Do you want to try again? [yes/no] \n")
+  respo = input ("This was a hard question would you want to try again? [yes/no] \n")
   respo = respo.lower()
   if respo =="yes":
     q6()
@@ -194,6 +162,7 @@ def try_again6():
 def wrong():
   print ("\n"
          "Sorry that answer was wrong, please try to answer this quiz again. Good luck!!")
+  
 
 #if all answers are correct v3
 def correct():
@@ -201,6 +170,17 @@ def correct():
          "You got them all correct! Ka pai " + user + "\n" 
          "(っ◔◡◔)っ ♥ you're amazing ♥ \n")
 
+#IDK WTF IM DOINGGGGGGGGGGGGGGGGG
+questions_answered = 0
+correct_questions = 0 
+wrong_questions = 0 
+
+question_results = [ "point", "no point"]
+for item in question_results:
+  questions_answered += 1
+
+  result = item
+  # iffffffffffff resulttttttttttttttttbahalabhallll https://www.youtube.com/watch?v=j1VkAGssvUg
   
 
 #this is gonna make my work look *FABULOUS* 
@@ -214,7 +194,7 @@ answer = input ("Do you want to take this quiz? [yes/no] \n").lower()
 if answer == "yes":
   q1()
 
-  # https://replit.com/talk/ask/How-do-I-add-a-score/119103
+  # https://www.youtube.com/watch?v=j1VkAGssvUg
 else:
   print("Okay, maybe next time")
 #ask question 1
