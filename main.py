@@ -1,3 +1,4 @@
+score = 0
 # unit standard as91883 - as91884. Created by Charlotte Entwisle-Phillips, Started on 10/5/2022. My goal is to make a te reo quiz.
 #https://replit.com/@Charlotte20078/test#main.py......https://replit.com/@reiman/Python-Challenge-The-Quiz#main.py
 
@@ -5,53 +6,34 @@
 
 #this part of code should send them to q2 or wrong depending on input v6
 #this is gonna make my work look *FABULOUS* (greens my favorite colour)
-score = 0
 
 def q1():
   print ("\n"
          "Question 1")
-  colour = input ("Whero is what color? \n"
-                  "A.Blue \n"
-                  "B.Green \n"
-                  "C.Red \n"
-                  "D.Yellow \n")
+  colour = input ("Whero is red [true/false] \n")
   colour = colour.lower()
-  if colour == "red":
+  if colour == "true":
     print ("Correct")
     q2()
+    score =+ 1 
 
-  elif colour == "C":
-    print ("Correct")
-    q2()
-  elif colour == "c":
-    print ("Correct")
-    q2()
   else:
     print ("Wrong")
     q2()
-  
+    score =- 1
     
+  
     
 #ask question 2, this part of code should send them to q3 or wrong depending on input v3
 def q2():
   print ("\n"
          "Question 2") 
-  dance = input ("What is the traditional maori dance called? \n" 
-                 "A.Pukana \n" 
-                 "B.Haka \n"
-                 "C.Kabuki \n" 
-                 "D.Taki \n")
+  dance = input ("the traditonal maori dance is Pukana [true/false] \n" )
   dance = dance.lower()
-  if dance == "haka":
+  if dance == "false":
     print ("Correct")
     q3()
     
-  elif dance == "B":
-    print ("Correct")
-    q3()
-  elif dance == "b":
-    print ("Correct")
-    q3()
   else:
     print ("Wrong")
     q3()
@@ -60,50 +42,24 @@ def q2():
 def q3():
   print ("\n"
          "Question 3") 
-  song = input("Fill in the blank for the song - One day a ____ went swimming in the moana. \n" 
-               "A.Taniwha \n" 
-               "B.Mokopuna \n" 
-               "C.Tuna \n")
+  song = input("tahi is 10 in maori [true/false] \n")
   song = song.lower()
-  if song == "taniwha":
+  if song == "false":
     print ("Correct")
     q4()
-  
-  elif song == "A":
-    print ("Correct")
-    q4()
-  elif song == "a":
-    print ("Correct")
-    q4()
+ 
   else:
     print ("Wrong")
-    try_again3()
-
-def try_again3():
-  respo = input ("This was a hard question would you want to try again? [yes/no] \n")
-  respo = respo.lower()
-  if respo =="yes":
-    q3()
-  else:
-    q4()
 #ask question 4, this part of code should send them to q5 or wrong depending on input  v3
 def q4():
   print ("\n"
   "Question 4") 
-  ocean = input("What is the maori word for ocean? \n"
-               "A.Wai \n"
-               "B.Moana \n")
+  ocean = input("moana is the maori word for ocean? [true/false]\n")
   ocean = ocean.lower()
-  if ocean == "moana":
+  if ocean == "true":
     print ("Correct")
     q5()
 
-  elif ocean == "B":
-    print ("Correct")
-    q5()
-  elif ocean == "b":
-    print ("Correct")
-    q5()
   else:
     print ("Wrong")
     q5()
@@ -171,20 +127,8 @@ def correct():
          "(っ◔◡◔)っ ♥ you're amazing ♥ \n")
 
 #IDK WTF IM DOINGGGGGGGGGGGGGGGGG
-questions_answered = 0
-correct_questions = 0 
-wrong_questions = 0 
-
-question_results = [ "point", "no point"]
-for item in question_results:
-  questions_answered += 1
-
-  result = item
-  # iffffffffffff resulttttttttttttttttbahalabhallll https://www.youtube.com/watch?v=j1VkAGssvUg
-  
-
 #this is gonna make my work look *FABULOUS* 
-print("\033[1;36m ")
+print("\033[1;35m ")
 #this is the intro, welcome the user explain the quiz. this is version3. dates edited/made 9/5/22 11/5/22 12/5/22
 print ("Te reo maori quiz - created by Charlotte ")
 print ("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
@@ -193,6 +137,7 @@ print ("Kia ora, " + user + " this is a quiz created to test your maori language
 answer = input ("Do you want to take this quiz? [yes/no] \n").lower()
 if answer == "yes":
   q1()
+  print (score)
 
   # https://www.youtube.com/watch?v=j1VkAGssvUg
 else:
