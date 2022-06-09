@@ -241,7 +241,7 @@ def q6():
     print ("your score = ")
     print (score)
     time.sleep(1)
-    results()
+    q7()
 
   elif store == "false":
     score -= 1
@@ -249,7 +249,7 @@ def q6():
     print ("your score = ")
     print (score)
     time.sleep(1)
-    results()
+    q7()
 
   elif store == "t":
     score +=1 
@@ -257,9 +257,52 @@ def q6():
     print ("your score = ")
     print (score)
     time.sleep(1)
-    results()
+    q7()
 
   elif store == "f":
+    score -= 1
+    print ("Wrong")
+    print ("your score = ")
+    print (score)
+    time.sleep(1)
+    q7()
+    
+  else:
+    print("Please try with either True / false")
+    time.sleep(1)
+    q6()
+
+def q7():
+  global score
+  print ("\n"
+  "Question 6")
+  grass = input("He inu māu? means would you like a drink? [true/false or t/f]\n")
+  grass = grass.lower()
+  if grass == "true":
+    score +=1 
+    print ("Correct")
+    print ("your score = ")
+    print (score)
+    time.sleep(1)
+    results()
+
+  elif grass == "false":
+    score -= 1
+    print ("Wrong")
+    print ("your score = ")
+    print (score)
+    time.sleep(1)
+    results()
+
+  elif grass == "t":
+    score +=1 
+    print ("Correct")
+    print ("your score = ")
+    print (score)
+    time.sleep(1)
+    results()
+
+  elif grass == "f":
     score -= 1
     print ("Wrong")
     print ("your score = ")
@@ -270,7 +313,7 @@ def q6():
   else:
     print("Please try with either True / false")
     time.sleep(1)
-    q6()
+    q7()
 
 #if all answers are answered v7
 def results():
@@ -284,9 +327,9 @@ def results():
 
 #IDK WTF IM DOINGGGGGGGGGGGGGGGGG
 #this is gonna make my work look *FABULOUS* 
-print("\033[3;31m ")
+print("\033[3;32m ")
 
-#this is the intro, welcome the user explain the quiz. this is version3. dates edited/made 9/5/22 11/5/22 12/5/22
+#this is the intro, welcome the user explain the quiz. this is version6. dates edited/made 9/5/22 11/5/22 12/5/22
 print ("Te reo maori quiz - created by Charlotte ")
 print ("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 time.sleep(1)
