@@ -49,6 +49,7 @@ def q1():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    colour = colour.lower()
     q1()
   
 #ask question 2, this part of code should send them to q3 or wrong depending on input v3
@@ -94,6 +95,7 @@ def q2():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    dance = dance.lower()
     q2()
   
 #ask question 3, this part of code should send them to q4 or wrong depending on input v3
@@ -138,6 +140,7 @@ def q3():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    song = song.lower()
     q3()
   
 #ask question 4, this part of code should send them to q5 or wrong depending on input  v3
@@ -182,6 +185,7 @@ def q4():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    ocean = ocean.lower()
     q4()
     
 #ask question 5, this part of code should send them to q6 or wrong depending on input v3
@@ -226,6 +230,7 @@ def q5():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    word = word.lower()
     q5()
     
 #ask question 6, this part of code should send them to correct or wrong depending on input v4
@@ -270,12 +275,13 @@ def q6():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    store = store.lower()
     q6()
 
 def q7():
   global score
   print ("\n"
-  "Question 6")
+  "Question 7")
   grass = input("He inu māu? means would you like a drink? [true/false or t/f]\n")
   grass = grass.lower()
   if grass == "true":
@@ -313,6 +319,7 @@ def q7():
   else:
     print("Please try with either True / false")
     time.sleep(1)
+    grass = grass.lower()
     q7()
 
 #if all answers are answered v7
